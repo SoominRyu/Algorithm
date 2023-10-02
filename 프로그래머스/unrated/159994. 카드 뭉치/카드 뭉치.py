@@ -1,3 +1,4 @@
+
 def solution(cards1, cards2, goal):
     answer = ''
     n1 = 0
