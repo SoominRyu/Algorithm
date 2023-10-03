@@ -1,5 +1,6 @@
 from itertools import permutations as p
 
+# 최대 행 : 8이므로 순열 사용 가능
 def solution(k, dungeons):
     answer = 0
     now_k = k
@@ -18,7 +19,6 @@ def solution(k, dungeons):
             break
                     
     return answer
-
 
 
 # 테케 9, 13 실패
