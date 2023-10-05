@@ -1,0 +1,15 @@
+SELECT CART_ID
+FROM (SELECT distinct CART_ID, NAME
+    FROM CART_PRODUCTS
+    WHERE NAME IN ('Milk', 'Yogurt')) cart
+GROUP BY CART_ID
+HAVING COUNT(CART_ID) = 2
+ORDER BY CART_ID
+
+
+-- 검증
+# SELECT distinct CART_ID, NAME
+#     FROM CART_PRODUCTS
+#     WHERE NAME IN ('Milk', 'Yogurt')
+    
+-- 286, 448, 578, 977, 1048
